@@ -7,7 +7,7 @@ meta:
     version: 18
 build:
   additionalCommands:
-  - yarn install
+    - yarn install
   artifacts:
     build/*: /
 run:
