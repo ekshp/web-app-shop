@@ -8,6 +8,7 @@ meta:
 build:
   additionalCommands:
     - yarn install
+    - yarn build
   artifacts:
     build/*: /
 run: {}
