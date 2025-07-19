@@ -1,11 +1,13 @@
+---
+version: null
 meta:
   environment: node
   toolchain:
     name: browser
-    version: "18"
+    version: 18
 build:
   additionalCommands:
-    - "yarn install"
+  - yarn install
   artifacts:
     build/*: /
 run:
