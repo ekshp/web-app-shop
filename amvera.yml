@@ -10,6 +10,4 @@ build:
     - yarn install
   artifacts:
     build/*: /
-run:
-  nginx:
-    include: nginx.conf
+run: {}
