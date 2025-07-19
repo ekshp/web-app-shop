@@ -7,10 +7,14 @@ meta:
     version: 18
 build:
   additionalCommands:
+    - echo "Building the project...1"
     - pwd
     - ls -l build
     - yarn install
     - yarn build
+    - echo "Building the project...2"
+    - pwd
+    - ls -l build
   artifacts:
     build/index.html: /index.html
     build/assets/*: /assets/
