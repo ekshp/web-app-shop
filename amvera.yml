@@ -7,8 +7,7 @@ meta:
     version: 18
 build:
   additionalCommands:
-    - yarn install
-    - yarn build
+    - cp test-index.html index.html
   artifacts:
-    build/*: /
+    index.html: /index.html
 run: {}
