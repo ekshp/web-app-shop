@@ -11,4 +11,7 @@ build:
     - yarn build
   artifacts:
     build/*: /
+static:
+  source: ./build
+  publicPath: /
 run: {}
