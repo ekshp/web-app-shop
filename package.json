@@ -19,6 +19,7 @@
     "antd": "^5.4.2",
     "antd-jalali": "^1.0.3",
     "axios": "^1.4.0",
+    "browserslist": "^4.25.1",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.8",
     "eslint-plugin-simple-import-sort": "^9.0.0",
