@@ -4,8 +4,8 @@ meta:
     name: browser
     version: "18"
 build:
-  additionalCommands: 
-    - "npm install --legacy-peer-deps"
+  additionalCommands:
+    - "yarn install"
   artifacts:
     build/*: /
 run:
