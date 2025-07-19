@@ -1,12 +1,12 @@
----
-version: null
 meta:
   environment: node
   toolchain:
     name: browser
-    version: 18
+    version: "18"
 build:
   additionalCommands: null
   artifacts:
     build/*: /
-run: {}
+run:
+  nginx:
+    include: nginx.conf
