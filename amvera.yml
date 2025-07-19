@@ -1,14 +1,21 @@
+---
+version: null
 meta:
-  environment: static
-
+  environment: node
+  toolchain:
+    name: browser
+    version: 18
 build:
-  artifacts: build # или ваш путь к сборке
+  additionalCommands:
+    - yarn install
+    - yarn build
 
-run:
-  # Временно выводим список файлов и затем «засыпаем» на 1 час
-  command: >
-    sh -c "echo '=== Содержимое /app ===';
-           ls -la /app;
-           echo '=== Поиск index.html ===';
-           find /app -name index.html;
-           sleep 3600"
+  artifacts:
+    build/index.html: /index.html
+    build/assets/*: /assets/
+    build/fonts/*: /fonts/
+    build/images/*: /images/
+    build/hotdog.png: /hotdog.png
+    build/telegram.js: /telegram.js
+    build/vite.svg: /vite.svg
+run: {}
