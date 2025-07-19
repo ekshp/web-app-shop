@@ -7,6 +7,8 @@ meta:
     version: 18
 build:
   additionalCommands:
+    - pwd
+    - ls -l build
     - yarn install
     - yarn build
   artifacts:
