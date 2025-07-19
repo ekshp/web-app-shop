@@ -1,21 +1,12 @@
----
-version: null
 meta:
   environment: node
   toolchain:
     name: browser
-    version: 18
+    version: "18"
 build:
-  additionalCommands:
-    - yarn install
-    - yarn build
-
+  additionalCommands: null
   artifacts:
-    build/index.html: /index.html
-    build/assets/*: /assets/
-    build/fonts/*: /fonts/
-    build/images/*: /images/
-    build/hotdog.png: /hotdog.png
-    build/telegram.js: /telegram.js
-    build/vite.svg: /vite.svg
-run: {}
+    build/*: /
+run:
+  nginx:
+    include: nginx.conf
