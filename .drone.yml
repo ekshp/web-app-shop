@@ -10,7 +10,7 @@ steps:
   - name: install
     image: node:14
     commands:
-      - npm install
+      - yarn install
   - name: create-env-file
     image: alpine:3
     environment:
@@ -30,7 +30,7 @@ steps:
   - name: build
     image: node:14
     commands:
-      - npm run build
+      - yarn run build
 
   - name: deploy
     image: ubuntu:20.04
