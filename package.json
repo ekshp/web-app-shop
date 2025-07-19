@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "install": "npm install --legacy-peer-deps",
     "prev": "vite preview",
     "lint:eslint": "eslint . --ext .ts,.tsx",
     "fix:eslint": "eslint --fix  . --ext .ts,.tsx",

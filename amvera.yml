@@ -4,7 +4,8 @@ meta:
     name: browser
     version: "18"
 build:
-  additionalCommands: null
+  additionalCommands: 
+    - "npm install --legacy-peer-deps"
   artifacts:
     build/*: /
 run:
