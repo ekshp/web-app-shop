@@ -7,7 +7,14 @@ meta:
     version: 18
 build:
   additionalCommands:
-    - cp test-index.html index.html
+    - yarn install
+    - yarn build
   artifacts:
-    index.html: /index.html
+    build/index.html: /index.html
+    build/assets/*: /assets/
+    build/fonts/*: /fonts/
+    build/images/*: /images/
+    build/hotdog.png: /hotdog.png
+    build/telegram.js: /telegram.js
+    build/vite.svg: /vite.svg
 run: {}
